@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Yeseva One;
+}
+
+/* styling the header part that involves 2 sections */
+header{
+    /* writing flex in order to position 2 sections vertically */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+
+    margin-top:20px;
+    padding:0px;
+    margin-bottom: -1px; /*there will not be the space betwee the header and the main art */
+  
+}
+
+/* first section - logo, name of the hospital, additional info */
+.first-section-of-header-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* first div from the  first section */
+.first-div-of-section-one{
+    /* writing flex in order to position logo and the clinick name horizonally */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+ 
+
+}
+
+/* styling the logo */
+.logo{
+    width:36.44px;
+    height:41.97px;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+}
+
+@keyframes appearing-rigth{
+    from{
+        opacity:0;
+        transform:translateX(800px)
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+/* name of the hospital */
+.first-div-of-section-one h1{
+    font-family:Yeseva One;
+    font-size:31px;
+    color:#1F2B6C;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+
+}
+.first-div-of-section-one h1 span{
+    color:#B1040E;
+
+}
+
+@keyframes appearing-left{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+
+
+/* second-div(parent) that involves 3 divs*/
+.second-div-of-section-one{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+
+    margin-left:200px;
+
+ 
+}
+
+/* child divs from the second div of the section one. divs involve 1 icon and 2 paragraphs */
+.child-div-of-second-div{ 
+    display:flex;
+    align-items:center;
+
+    margin-left:70px;
+  
+}
+
+/* styling the div that incoles 2 paragraphs */
+.div-of-child-div{
+    display:flex;
+    flex-direction:column;
+    margin-left:7px;
+
+}
+
+/* first p */
+.first-p-of-child-div{
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+/* second p */
+.second-p-of-child-div{
+    color:#B1040E;
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+
+  
+}
+/* icons: */
+.contact{
+    width:38px;
+    height:37px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.clock{
+    width:32px;
+    height:33px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.location{
+    width:40px;
+    height:39px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;    
+}
+
+/*   *****second section from the header part*****  */
+
+/* styling the second section from the header part */
+.second-section-of-header-part{
+    /* writing flex in order to position elements horizotally */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-color:#1F2B6C;
+    width:100%;
+    margin-top:20px;
+
+    
+   
+}
+
+/* navbar */
+nav{
+    /* writing flex in order to position lis' horizontally */
+    display:flex;
+    list-style-type: none;
+
+    
+    padding:10px 0;
+ 
+}
+
+nav li{
+    font-size:20px;
+
+    margin:10px;
+    padding:10px;
+
+    animation-name:top-appearing;
+    animation-duration:2s;
+}
+@keyframes top-appearing{
+    from{
+        opacity:0;
+        transform: translateY(-300px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+nav li a{
+    color:#000;
+    text-decoration: none;
+    transition:color 0.1s;
+    color:#fff;
+
+    
+}
+
+nav li a:hover{
+    color:#B1040E;
+    cursor:pointer;
+    color:#000;
+}
+
+/* styling the second div from the second section */
+.div-of-second-section{
+    /* writing flex in order to position elements horizontally in the center */
+    display:flex;
+    align-items:center;
+
+    margin-top:5px;
+    margin-left:65px;
+   
+}
+
+/* search icon */
+.search{
+    width:25px;
+    height:25px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;  
+}
+
+/* button */
+.div-of-second-section button{
+    width:173px;
+    height:45px;
+    border-radius:50px;
+
+    margin-left:20px;
+
+    animation-name:top-appearing;
+    animation-duration:2s;
+}
+
+.btn-txt{
+    font-size:18px;
+    color:#000;
+    text-decoration: none;
+    font-family: Yeseva One;
+
+    transition:0.1s;
+
+}
+
+
+.btn-txt:hover{
+    cursor:pointer;
+}
+
+.div-of-second-section button:hover{
+    background-color:#ffffffcc
+}
+
+/****************** styling the main part ************** */
+
+
+/* first secttion */
+.first-section-from-the-main-part{
+    /* writing flex in order to position elements vertically */
+    display:flex;
+    flex-direction:column;
+
+    margin-top:20px;
+    margin-left:30px;
+
+
+    animation-name:appearing-top;
+    animation-duration:2s;
+}
+@keyframes appearing-top{
+    from{
+        opacity:0;
+        transform:translateY(100px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+/* first div from the first section */
+.first-div-of-first-section-from-the-main-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    align-items: center;
+
+}
+
+/* paragraphs */
+.first-p-from-the-first-div-of-the-main-part a{
+    color:#606060;
+    font-size:22px;
+    text-decoration: none;
+}
+
+.first-p-from-the-first-div-of-the-main-part a:hover{
+    cursor:pointer;
+    color:#000;
+}
+
+.second-p-from-the-first-div-of-the-main-part a{
+    font-size:22px;
+    text-decoration: none;
+    color:#1F2B6C;
+}
+
+.second-p-from-the-first-div-of-the-main-part a:hover{
+    cursor:pointer;
+    color:#B1040E;
+}
+
+/* right icon */
+.right-icon{
+    width:30px;
+    height:22px;
+}
+
+/* h1 */
+.first-section-from-the-main-part h1{
+    color:#1F2B6C;
+    margin-top:10px;
+}
+
+
+
+/* ***second section of main part*** */
+.second-section-from-the-main-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    margin-top:30px;
+
+}
+
+/* parent div */
+.parent-div-from-second-main-section{
+    width:240px;
+    height:48px;
+    border-radius:10px;
+
+    margin-left:30px;
+    border:1px solid #D9D9D9;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+/* child div */
+.child-div-from-second-main-section{
+    /* writing flex in order to position element verticaly in the center */
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin-top:12px;
+
+    /* animation */
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+@keyframes appearing-left{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* animation for the last two parent and child divs */
+.pr3{
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+.ch3{
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+
+.pr4{
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+
+.ch4{
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+
+@keyframes appearing-right{
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* search-icon */
+.sarch-doctors{
+    width:19px;
+    height:19px;
+    margin-left:15px;
+}
+
+/* p */
+.name-search{
+    margin-left:20px;
+}
+
+/* stethoscope - icon */
+.stethoscope-icon{
+    width:20px;
+    height:23px;
+    margin-left:10px;
+}
+
+/* p */
+.Speciality{
+    margin-left:10px;
+}
+
+/* down-icon */
+.down-icon-1{
+    width:20px;
+    height:20px;
+    margin-left:32px;
+}
+
+/* gender icon */
+.gender-icon{
+    width:18px;
+    height:18px;
+    margin-left:10px;
+}
+
+/* p */
+.gender{
+    margin-left:10px;
+}
+
+/* donwn-icon-2 */
+.down-icon-2{
+    width:20px;
+    height:20px;
+    margin-left:52px;
+}
+
+/* language-icon */
+.language-icon{
+    width:24px;
+    height:24px;
+    margin-left:10px;
+}
+/* p */
+.select-language{
+    margin-left:10px;
+}
+/* down-icon-3 */
+.down-icon-3{
+    width:20px;
+    height:20px;
+    margin-left:30px;
+}
+
+/* search buttton */
+.searching-button{
+    width:140px;
+    height:48px;
+    border-radius:8px;
+    background-color: #1F2B6C;
+    color:#B1040E;
+    margin-left:30px;
+    font-weight: bold;
+    font-size:15px;
+    font-family:Yeseva One ;
+    letter-spacing: 2px;
+
+    transition: 0.1s;
+
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+
+.searching-button:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* styling the third section from the min part */
+.third-section-from-the-main-part{
+    /* writing grid in order to create desired layouts */
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows:repeat(3,400px);
+
+    margin-top:20px;
+
+    gap:20px;
+}
+
+/* stylign the parent div */
+.parent-div-of-third-main-section{
+    width:400px;
+    height:380px;
+
+    border-radius:16px;
+    border:1px solid #E1E1E1;
+
+    /* writing flex in order to position elements vertically */
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+
+    margin-top:10px;
+   
+}
+
+/* styling the div that involves images, p-s and icons */
+.image-third-section-div{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* doctor's img */
+.image-third-section-div img{
+    width:120px;
+    height:120px;
+    border-radius:73px;
+}
+
+/* personal in formation div */
+.personal-info-div{
+    /* writing flex in order to position elements vertically */
+    display:flex;
+    flex-direction:column;
+
+    margin-left:20px;
+    margin-top:30px; 
+}
+
+
+/* making animation for the first ,second and third personal info div's */
+.p1{
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.p2{
+    animation-name:appearing-bottom;
+    animation-duration:2s;
+}
+
+@keyframes appearing-bottom{
+    from{
+        opacity:0;
+        transform:translateY(100px);
+    }
+    to{
+        opacity:1;
+        tranform:translateY(0);
+    }
+}
+
+.p3{
+    animation-name:appearing-right;
+    animation-duration:2s;
+}
+
+/* p-1 */
+.doctor-name{
+    font-size:20px;
+    font-weight: bold;
+    color:#1F2B6C;
+
+}
+
+/* p-2 */
+.Speciality-p{
+    color:#B1040E;
+    margin-top:5px;
+}
+
+/* div that involves icons and p-s */
+.experience-div{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    align-items:center;
+
+    margin-top:20px;
+}
+
+/* icon */
+.experience-div img{
+    width:20px;
+    height:23px;
+}
+
+/* p */
+.experience-div p{
+    margin-left:10px;
+}
+
+/* stylign the div that includes icon and paragraph */
+.languages-div{
+    display:flex;
+    align-items:center;
+    
+    margin-top:5px;
+}
+
+.languages-div img{
+    width:20px;
+    height:24px;
+}
+
+.languages-div p{
+    margin-left:10px;
+}
+
+hr{
+    margin-top:35px;
+    width:90%;
+    margin-left:20px;
+}
+
+/* styling the div that includes one icond and 1 p */
+.hospital-location-div{
+    display:flex;
+    align-items:center;
+
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.hospital-location-div img{
+    width:18px;
+    height:18px;
+    
+    
+}
+
+.hospital-location-div p{
+    font-size:14px;
+    font-weight:lighter;
+
+    margin-left:10px;
+
+}
+
+/* styling the div that has 1 icon and 1 p */
+.degree-div{
+    display:flex;
+    align-items:center;
+
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.degree-div img{
+    width:24px;
+    height:24px;
+}
+
+.degree-div p{
+    font-size:14px;
+    font-weight:lighter;
+
+    margin-left:10px;
+}
+
+/* buttons div */
+.buttons-div{
+    display:flex;
+    align-items:center;
+
+    margin-top:50px;
+    margin-left:20px;
+}
+
+.profile-button{
+    width:170px;
+    height:46px;
+    border-radius:6px;
+    border-color: #E1E1E1;
+   
+    font-family:Yeseva One ;
+    font-size:15px;
+
+    transition: 0.1s;
+}
+
+.pr-a{
+    text-decoration: none;
+    color:#000;
+}
+
+.profile-button:hover{
+    background-color:#E1E1E1 ;
+    cursor:pointer;
+}
+
+.appointment-button{
+    border-color: #E1E1E1;
+    width:180px;
+    height:46px;
+    border-radius:6px;
+    background-color:#1F2B6C;
+    color:#B1040E;
+    font-family:Yeseva One ;
+    font-size:15px;
+    letter-spacing: 1px;
+
+    margin-left:20px;
+
+    transition:0.1s;
+}
+
+.ap-a{
+    text-decoration: none;
+    color:#B1040E;
+}
+
+.appointment-button:hover{
+    background-color:#E1E1E1 ;
+    cursor:pointer;
+}
+
+
+/* forth main section */
+.forth-main-section{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.child-forth-div{
+    width:60px;
+    height:40px;
+    border:1px solid #E1E1E1 ;
+
+    margin-left:15px;
+    transition:1s;
+}
+
+.child-forth-div p{
+    margin-top:5px;
+    margin-left:20px;
+
+    font-size:25px;
+
+}
+
+.child-forth-div:hover{
+    background-color: #1F2B6C;
+    cursor: pointer;
+}
+
+/* ***********styling the footer part************ */
+footer{
+    /* writing flex in order to position elements vertically */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    margin-top:100px;
+    background-color: #1F2B6C;
+}
+
+
+/* first footer part */
+.firt-footer-part{
+    /* writing flex in order to position elemenrs horizontally */
+    display:flex;
+
+    gap:120px;
+    height:320px;
+    margin-top:20px;
+}
+
+.footer-title{
+    font-size:22px;
+    color:#fff;
+    margin-top:30px;
+}
+
+.first-footer-p{
+    margin-top:30px;
+    font-size:17px;
+    color:#fff;
+}
+
+.first-footer-p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.first-footer-p a:hover{
+    cursor:pointer;
+    color:#B1040E;
+}
+
+.under-footer-p{
+    margin-top:10px;
+    color:#fff;
+}
+
+.under-footer-p a{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+.under-footer-p a:hover{
+    cursor:pointer;
+    color:#B1040E;
+}
+.footer-form{
+    margin-top:20px;
+}
+
+.footer-input{
+    width:250px;
+    height:40px;
+    border:none;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    background-color: #1F2B6C;
+    padding-left:2px;
+}
+
+.longer{
+    height:70px;
+    padding-bottom:30px;
+}
+
+.child-footer-part button{
+    width:150px;
+    height:40px;
+    margin-top:20px;
+    background-color: #BFD2F8;
+    transition:1s;
+}
+
+.child-footer-part button a{
+    text-decoration: none;
+    font-family:Yeseva One;
+    font-size:17px;
+}
+
+.child-footer-part button:hover{
+    cursor:pointer;
+    background-color:#B1040E;
+}
+
+hr{
+    color:#fff;
+    width:90%;
+   margin-bottom:20px;
+}
+
+/* second part of the footer part */
+.second-footer-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+    margin-top:0px;
+}
+
+.website-right{
+    margin-right:950px;
+    color:#fff;
+}
+
+.img-footer-div{
+    margin-left:10px;
+}

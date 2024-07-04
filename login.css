@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Yeseva One;
+}
+
+/* styling the header part that involves 2 sections */
+header{
+    /* writing flex in order to position 2 sections vertically */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+
+    margin-top:20px;
+    padding:0px;
+    margin-bottom: -1px; /*there will not be the space betwee the header and the main art */
+  
+}
+
+/* first section - logo, name of the hospital, additional info */
+.first-section-of-header-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* first div from the  first section */
+.first-div-of-section-one{
+    /* writing flex in order to position logo and the clinick name horizonally */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+ 
+
+}
+
+/* styling the logo */
+.logo{
+    width:36.44px;
+    height:41.97px;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+}
+
+@keyframes appearing-rigth{
+    from{
+        opacity:0;
+        transform:translateX(800px)
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+/* name of the hospital */
+.first-div-of-section-one h1{
+    font-family:Yeseva One;
+    font-size:31px;
+    color:#1F2B6C;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+
+}
+.first-div-of-section-one h1 span{
+    color:#B1040E;
+
+}
+
+@keyframes appearing-left{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+
+
+/* second-div(parent) that involves 3 divs*/
+.second-div-of-section-one{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+
+    margin-left:200px;
+
+ 
+}
+
+/* child divs from the second div of the section one. divs involve 1 icon and 2 paragraphs */
+.child-div-of-second-div{ 
+    display:flex;
+    align-items:center;
+
+    margin-left:70px;
+  
+}
+
+/* styling the div that incoles 2 paragraphs */
+.div-of-child-div{
+    display:flex;
+    flex-direction:column;
+    margin-left:7px;
+
+}
+
+/* first p */
+.first-p-of-child-div{
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+/* second p */
+.second-p-of-child-div{
+    color:#B1040E;
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+
+  
+}
+/* icons: */
+.contact{
+    width:38px;
+    height:37px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.clock{
+    width:32px;
+    height:33px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.location{
+    width:40px;
+    height:39px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;    
+}
+
+/*   *****second section from the header part*****  */
+
+/* styling the second section from the header part */
+.second-section-of-header-part{
+    /* writing flex in order to position elements horizotally */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-color:#1F2B6C;
+    width:100%;
+    margin-top:20px;
+
+    
+   
+}
+
+/* navbar */
+nav{
+    /* writing flex in order to position lis' horizontally */
+    display:flex;
+    list-style-type: none;
+
+    
+    padding:10px 0;
+ 
+}
+
+nav li{
+    font-size:20px;
+
+    margin:10px;
+    padding:10px;
+
+    animation-name:top-appearing;
+    animation-duration:2s;
+}
+@keyframes top-appearing{
+    from{
+        opacity:0;
+        transform: translateY(-300px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+
+nav li a{
+    color:#000;
+    text-decoration: none;
+    transition:color 0.1s;
+    color:#fff;
+
+    
+}
+
+nav li a:hover{
+    color:#B1040E;
+    cursor:pointer;
+    color:#000;
+}
+
+/* styling the second div from the second section */
+.div-of-second-section{
+    /* writing flex in order to position elements horizontally in the center */
+    display:flex;
+    align-items:center;
+
+    margin-top:5px;
+    margin-left:65px;
+   
+}
+
+/* search icon */
+.search{
+    width:25px;
+    height:25px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;  
+}
+
+/* button */
+.div-of-second-section button{
+    width:173px;
+    height:45px;
+    border-radius:50px;
+
+    margin-left:20px;
+
+    animation-name:top-appearing;
+    animation-duration:2s;
+}
+
+.btn-txt{
+    font-size:18px;
+    color:#000;
+    text-decoration: none;
+    font-family: Yeseva One;
+
+    transition:0.1s;
+
+}
+
+
+.btn-txt:hover{
+    cursor:pointer;
+}
+
+.div-of-second-section button:hover{
+    background-color:#ffffffcc
+}
+
+/****************** styling the main part ************** */
+
+main{
+    background-image: url('/images/login-background.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+
+    width:100%;
+    height:700px;
+}
+.first-section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* first main  section */
+.first-main-section{
+   /* writing flex in order to position elements vertically */
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   
+   margin-top:30px;
+   margin-left:650px;
+ 
+}
+
+
+.login{
+    margin-top:20px;
+    margin-right:250px;
+    font-size:55px;
+    color:#1F2B6C;
+
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+}
+
+.main-form{
+    margin-top:20px;
+}
+
+.Email-l{
+    font-size:25px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.email-inp{
+    margin-top:10px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+.input{
+    width:400px;
+    height:60px;
+    border-radius:5px;
+    padding-left:10px;
+}
+
+.input::placeholder{
+    font-size:18px;
+ 
+}
+/* p  of psw */
+.psw-l{
+    margin-top:20px;
+    font-size:22px;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+}
+/*password input */
+.ps-i{
+    margin-top:10px;
+
+    animation-name:appearing-rigth;
+    animation-duration:2s;
+}
+
+/* p */
+.frg-p{
+    margin-right:250px;
+    margin-top:10px;
+
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.frg-p a{
+    text-decoration: none;
+    color:#1F2B6C;
+}
+
+.sign-in{
+    margin-top:20px;
+    /* margin-right:60px; */
+    border-radius:10px;
+    width:400px;
+    height:60px;
+    background-color: #1F2B6C;
+    transition: 0.5s;
+
+    animation-name:appearing-bottom;
+    animation-duration:2s;
+}
+
+@keyframes appearing-bottom{
+    from{
+        opacity:0;
+        transform:translateY(100px)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sign-in a{
+    font-size:20px;
+    font-family:Yeseva One;
+    text-decoration: none;
+    color:#B1040E;
+   
+}
+
+.sign-in:hover{
+    cursor:pointer;
+    background-color: azure;
+}
+
+.Google-vs-text{
+    position:relative;
+    margin-top:10px;
+}
+
+.Google-vs-text button{
+    border-radius:10px;
+    width:400px;
+    height:60px;
+    margin-top:5px;
+    background-color:#fff;
+
+    animation-name:appearing-bottom;
+    animation-duration:2s;
+}
+.Google-vs-text button a{
+    text-decoration:none ;
+    font-size:20px;
+    font-family:Yeseva One;
+    color:#B1040E;
+    
+}
+
+.Google-vs-text img{
+    position:absolute;
+    transform:translateY(150%);
+    left:20px;
+
+}
+
+.Google-vs-text img:hover{
+    cursor:pointer;
+    
+}
+
+/* second section */
+.saving-page-section img{
+    width:610px;
+    height:510px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* ***********styling the footer part************ */
+footer{
+    /* writing flex in order to position elements vertically */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    /* margin-top:100px; */
+    background-color: #1F2B6C;
+}
+
+
+/* first footer part */
+.firt-footer-part{
+    /* writing flex in order to position elemenrs horizontally */
+    display:flex;
+
+    gap:120px;
+    height:320px;
+    margin-top:20px;
+}
+
+.footer-title{
+    font-size:22px;
+    color:#fff;
+    margin-top:30px;
+}
+
+.first-footer-p{
+    margin-top:30px;
+    font-size:17px;
+    color:#fff;
+}
+
+.first-footer-p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.first-footer-p a:hover{
+    cursor:pointer;
+    color:#B1040E;
+}
+
+.under-footer-p{
+    margin-top:10px;
+    color:#fff;
+}
+
+.under-footer-p a{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+.under-footer-p a:hover{
+    cursor:pointer;
+    color:#B1040E;
+}
+.footer-form{
+    margin-top:20px;
+}
+
+.footer-input{
+    width:250px;
+    height:40px;
+    border:none;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    background-color: #1F2B6C;
+    padding-left:2px;
+}
+
+.longer{
+    height:70px;
+    padding-bottom:30px;
+}
+
+.child-footer-part button{
+    width:150px;
+    height:40px;
+    margin-top:20px;
+    background-color: #BFD2F8;
+    transition:1s;
+}
+
+.child-footer-part button a{
+    text-decoration: none;
+    font-family:Yeseva One;
+    font-size:17px;
+}
+
+.child-footer-part button:hover{
+    cursor:pointer;
+    background-color:#B1040E;
+}
+
+hr{
+    color:#fff;
+    width:90%;
+   margin-bottom:20px;
+}
+
+/* second part of the footer part */
+.second-footer-part{
+    /* writing flex in order to position elements horizontally */
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+    margin-top:0px;
+}
+
+.website-right{
+    margin-right:950px;
+    color:#fff;
+}
+
+.img-footer-div{
+    margin-left:10px;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style-media.css">
+</head>
+<body>
+    <!--header part that has 2 sections-->
+    <header>
+        <!--first section of logo,name of the hospital,contact,working hours and location-->
+        <section class="first-section-of-header-part">
+            <div class="first-div-of-section-one">
+                <img class="logo" src="/images/logo.avif" alt="logo of the hospital">
+                <h1>PULSE<span>POINT</span></h1>
+            </div>
+
+            <div class="second-div-of-section-one">
+                <div class="child-div-of-second-div ch1">
+                    <img class="contact" src="/images/contact-icon.png" alt="contact-icon" width="50"> 
+                    <div class="div-of-child-div">
+                        <p class="first-p-of-child-div">EMERGENCY</p> 
+                        <p width="140" class="second-p-of-child-div">(237) 681-812-255</p>
+                    </div>
+                </div>
+                <div class="child-div-of-second-div ch2">
+                    <img class="clock" src="/images/clock-icon.png" alt="clock-icon" width="50">
+                    <div class="div-of-child-div">
+                        <p class="first-p-of-child-div">WORK HOUR</p>
+                        <p width="183" class="second-p-of-child-div">09:00 - 20:00 Everyday</p>
+                    </div>
+                </div>
+                <div class="child-div-of-second-div ch3">
+                    <img class="location" src="/images/location-icon.png" alt="location-icon" width="50">
+                    <div class="div-of-child-div">
+                        <p class="first-p-of-child-div">LOCATION</p>
+                        <p width="133" class="second-p-of-child-div">107-70 Stockholm, Sweden</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--second dection that involves navbar and the appointment searching part-->
+        <section class="second-section-of-header-part">
+            <nav>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">About us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/doctors.html">Doctors</a></li>
+                <li><a href="/news.html">News</a></li>
+                <li><a href="/contactus.html">Contact us</a></li>
+                <li><a href="/login.html">Login/Patient Portal</a></li>
+            </nav>
+
+            <!--for the litte screen-->
+            <div class="clinic-name-div">
+                <img class="hospital-logo" src="/images/logo.avif" alt="logo of the hospital">
+                <h1>PULSE<span>POINT</span></h1>
+            </div>
+
+            <div class="div-of-second-section">
+                <img  class="search" src="/images/search-icon.png" alt="saerch-icon" >
+                <button><a class="btn-txt" href="/appointment.html">Appointment</a></button>
+            </div>
+
+            <!--for the little screen-->
+            <div class="burger-menu-div">
+                <img src="/images/burger-menu.png" alt="">
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <!--creating the first section where the main content will be set-->
+        <section class="first-section-of-main-part">
+            <!--there will be video in the background-->
+            <video autoplay muted loop class="bg-video" poster="/path/to/last-frame.jpg">
+                <source src="/videos/home-page-background.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!--section2- about us part-->
+        <section class="second-main-section">
+            <div class="text-part">
+                <h1 class="welcome-to">WELCOME TO</h1>
+                <h1 class="pulse-point">PULSE<span>POINT</span></h1>
+                
+                <p class="first-p-from-text-part">
+                    At Pulsepoint, our mission is to lead the way in heart health, 
+                    ensuring that every heartbeat counts. Founded on July 20, 1969, 
+                    Pulsepoint has been a pioneer in cardiology for over five decades. 
+                    Our clinic is dedicated to providing top-notch care in cardiology, 
+                    leveraging the latest advancements in medical science to offer 
+                    innovative treatments and personalized care plans.
+                </p>
+
+                <p class="second-p-from-text-part">
+                    Our comprehensive services include <a href="#" class="service-links">Cardio-Surgery</a>, 
+                    <a href="#" class="service-links">Emergency Medicine</a>, <a href="#" class="service-links">Therapy/Internal Medicine</a>, and 
+                    <a href="#" class="service-links">Therapy/Rehabilitation</a>. We specialize in treating 
+                    a wide range of cardiovascular conditions, from routine 
+                    check-ups to complex surgeries. At Pulsepoint, we believe 
+                    in a holistic approach to heart health, focusing on prevention, 
+                    treatment, and rehabilitation.
+                    Join us at Pulsepoint, where your heart health is our top priority.
+                </p>
+
+                <div class="parent-img-vs-text-div">
+                    <div class="img-vs-text">
+                        <img src="/images/appointment-icon.png" alt="">
+                        <p><a href="/appointment.html" class="text">Online Appointment</a></p>
+                    </div>
+
+                    <div class="img-vs-text div2">
+                        <img src="/images/appointment-icon.png" alt="">
+                        <p ><a href="/services.html" class="text">Our Services</a></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="img-part">
+                <img src="/images/about-us-img-1.jpg" alt="heapy-patient">
+            </div>
+        </section>
+
+        <!--Third section that involves the information of services-->
+        <h1 class="serveces-title">Innovative Medical Services</h1>
+        <section class="third-main-section">
+            <!--Emergency service - info-->
+            <div class="service-parent-div">
+                <div class="icon-vs-text">
+                    <div class='circle-div'>
+                        <a href="/services.html">
+                            <img class="emergency" src="/images/ambulance-icon.png" alt="" >
+                        </a>
+                    </div>
+                    <h2><a class="emergency-class" href="/services.html"><b>Emergency <span>Medicine</span></b></a></h2>
+                    <p>
+                        At Pulsepoint Clinic, our <a class="service-links" href="/services.html"><b>Emergency Medicine</b></a> department delivers expert, 
+                        compassionate care for all medical emergencies.
+                    </p>
+    
+                </div>
+            </div>
+            <!--Therapy service - info-->
+            <div class="service-parent-div">
+                <div class="icon-vs-text">
+                    <div class="circle-div">
+                        <a href="/services.css">
+                            <img class="therapy" src="/images/consultation-icon.png" alt="">
+                        </a>
+                    </div>
+                    <h2><a class="bigger-p" href="services.html"><b>Therapy/Internal <span>Medicine</span></b></a></h2>
+                    <p>
+                        At Pulsepoint, our <a class="service-links" href="/services.html"><b>Therapy/Internal Medicine</b></a> department specializes in 
+                        comprehensive care for chronic illnesses, complex health issues, and 
+                        preventive medicine.
+                    </p>
+                </div>
+            </div>
+
+
+            <!--cardio-surgeory service - info-->
+            <div class="service-parent-div">
+                <div class="icon-vs-text">
+                    <div class="circle-div">
+                        <a href="/services.html">
+                            <img class="cadio-logo" src="/images/logo.avif" alt="" >
+                        </a>
+                    </div>
+                        <h2><a href="/services.html">Cardio-Surgery</a></h2>
+                    <p class="under-cardio-p">
+                        At Pulsepoint Clinic, our <a class="service-links" href="/services.html"><b>Cardio-Surgery</b></a> department offers advanced care 
+                        for heart conditions, ensuring optimal outcomes with compassion and 
+                        precision.
+                    </p>
+                </div>
+
+              
+            </div>
+
+            <!--rehabiliation service - info-->
+            <div class="service-parent-div">
+                <div class="icon-vs-text">
+                    <div class="circle-div">
+                        <a href="/services.html">
+                            <img class="rehabilitation" src="/images/rehabilitation-icon.png" alt="" >
+                        </a>    
+                    </div>
+                    <h2><a href="/services.html">Therapy/Rehabilitation</a></h2>
+                    <p>
+                        At Pulsepoint Clinic, our <a class="service-links" href="/services.html"><b>Therapy/Rehabilitation department</b></a>  offers expert, 
+                        personalized care for patient recovery with compassion and tailored treatment 
+                        plans.
+                    </p>
+                </div> 
+            </div>
+        </section>
+
+        <!--forth main section -About doctors!-->
+        <section class="forth-main-section">
+            <div class="first-part-of-doctors-info">
+                <div class="logo-vs-doctors">
+                    <h1 class="name-of-the-clinic">PULSE<span>POINT</span></h1>
+                    <h1 class="second-h1">Experienced Doctors</h1>
+                </div>
+
+                <p>
+                    Our team of experienced doctors brings decades of collective expertise,
+                    dedicated to delivering compassionate care and personalized medical  
+                    solutions.
+                </p>
+            </div>
+
+            <div class="second-part-of-doctors-info">
+                <!--first doctor-->
+                <div class="parent-doctor-div">
+                    <img src="/images/doctor-8.jpg" alt="" width="350" height="280">
+                    <h2>Dr.Joshua Lewis</h2>
+                    <p class="title-p">Chief of Cardiology</p>
+                    <hr>
+                    <div class="under-name-div">
+                        <div class="child-under chl1">
+                            <img class="contact-doctor" src="/images/contact-icon.png" alt="" width="30" heght="30">
+                            <p class="p-cnt"><b>Contact:</b></p>
+                            <p class="contact-info">+7 3545 656 888</p>
+                        </div>
+                        <div class="child-under chl2">
+                            <img class="facebook-icon" src="/images/facebook-logo.png" alt="" >
+                            <img class="twitter-icon" src="/images/twiter-icon.png" alt="" width="20" height="20">
+                            <img class="insta-icon" src="/images/instagram-icon.png" alt="" width="20" height="20">
+                        </div>
+                    </div>
+                </div>
+                <!--second-doctor-->
+                <div class="parent-doctor-div">
+                    <img src="/images/doctor-3.jpg" alt="" width="350" height="280">
+                    <h2>Dr.James Anderson</h2>
+                    <p class="title-p">Interventional Cardiologist</p>
+                    <hr>
+                    <div class="under-name-div">
+                        <div class="child-under chl1">
+                            <img class="contact-doctor" src="/images/contact-icon.png" alt="" width="30" heght="30">
+                            <p class="p-cnt"><b>Contact:</b></p>
+                            <p class="contact-info">+7 3545 656 888</p>
+                        </div>
+                        <div class="child-under chl2">
+                            <img class="facebook-icon" src="/images/facebook-logo.png" alt="" >
+                            <img class="twitter-icon" src="/images/twiter-icon.png" alt="" width="20" height="20">
+                            <img class="insta-icon" src="/images/instagram-icon.png" alt="" width="20" height="20">
+                        </div>
+                    </div>
+                </div>
+                <!--third - doctor-->
+                <div class="parent-doctor-div">
+                    <img src="/images/additional-doctor.jpg" alt="" width="350" height="280">
+                    <h2>Dr.Sarah Thompson</h2>
+                    <p class="title-p">Cardiac Electrophysiologist</p>
+                    <hr>
+                    <div class="under-name-div">
+                        <div class="child-under chl1">
+                            <img class="contact-doctor" src="/images/contact-icon.png" alt="" width="30" heght="30">
+                            <p class="p-cnt"><b>Contact:</b></p>
+                            <p class="contact-info">+7 3545 656 888</p>
+                        </div>
+                        <div class="child-under chl2">
+                            <img class="facebook-icon" src="/images/facebook-logo.png" alt="" >
+                            <img class="twitter-icon" src="/images/twiter-icon.png" alt="" width="20" height="20">
+                            <img class="insta-icon" src="/images/instagram-icon.png" alt="" width="20" height="20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--fifth-main-section - BOOK APPOINMENT-->
+        <section class="fifth-main-section">
+            <img src="/images/img-booking.png" alt="">
+            <div class="text-vs-form">
+                <h1>BOOK <span>APPOINTMENT</span></h1>
+                <p>
+                    To schedule an appointment with one of our skilled doctors,please contact  
+                    our <br> clinic at  +237 681 812 255 or visit our website to book online.
+                </p>
+
+                <form class="fifth-section-form">
+                    <input class="fifth-section-input"  type="text" placeholder="Full Name"> <br>
+                    <input class="fifth-section-input"  type="email" placeholder="Email Address"> <br>
+                    <input class="fifth-section-input"  type="number" placeholder="Phone Numeber"><br>
+                    <select class="service-choice" name="service" id="service" required>
+                        <option value="">Choose Service</option>
+                        <option value="cardio-surgeory">Cardio-surgeory</option>
+                        <option value="emergency-medicine">Emergency Medicine</option>
+                        <option value="therapy-internal-medicine">Therapy/Internal Medicine</option>
+                        <option value="therapy-rehabilitation">Therapy/Rehabilitation</option>
+                    </select> <br>
+                    <input  class="fifth-section-input message-input" type="text" placeholder="Your Message">
+                </form>
+                <button><a href="#">Book Now</a></button>
+            </div>
+        </section>
+
+        <!--sixth main section - get in touch!-->
+        <section class="six-main-section">
+            <h1>Contact</h1>
+            <div class="parent-contact-div">
+                <div class="child-contat-div">
+                    <img  src="/images/new-contct.png" alt="" width="40" height="39">
+                    <p class="title-contact">EMERGENCY</p>
+                    <p class="under-p">(237) 681-812-255</p>
+                    <p class="p2">(237) 681-812-255</p>
+                </div>
+
+                <div class="child-contat-div">
+                    <img src="/images/blue-loc.png" alt="" width="30" height="36">
+                    <p class="title-contact">LOCATION</p>
+                    <p class="under-p">107-70 Stockholm</p>
+                    <p class="p2">107-70 Sweden</p>
+                </div>
+                <div class="child-contat-div">
+                    <img src="/images/email-icon.png" alt="" width="36" height="30">
+                    <p class="title-contact">EMAIL</p>
+                    <p class="under-p">PulsePoint@gmail.com</p>
+                    <p class="p2">PulsePoint@gmail.com</p>
+                </div>
+
+                <div class="child-contat-div">
+                    <img src="/images/new-clock.png" alt="" width="30" height="30">
+                    <p class="title-contact">WORKING HOURS</p>
+                    <p class="under-p">09:00 - 20:00 Everyday</p>
+                    <p class="p2">09:00 - 20:00 Everyday</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="firt-footer-part">
+            <div class="child-footer-part">
+                <p class="footer-title">Important links</p>
+                <p class="first-footer-p"><a href="/appointment.html">Appointment</a></p>
+                <p class="under-footer-p"><a href="/doctors.css">Doctors</a></p>
+                <p class="under-footer-p"><a href="/services.html">Services</a></p>
+                <p class="under-footer-p"><a href="/aboutus.html">About Us</a></p>
+                <p class="under-footer-p"><a href="/news.html">News</a></p>
+                <p class="under-footer-p"><a href="login.html">Login/Patient Portal</a></p>
+            </div>
+
+            <div class="child-footer-part">
+                <p class="footer-title">Contact Us</p>
+                <p class="first-footer-p">Emergency:(237) 681-812-255</p>
+                <p class="under-footer-p">Email Address:PulsePoint@gmail.com</p>
+                <p class="under-footer-p">Location:107-70 Stockholm, Sweden</p>
+            </div>
+
+            <div class="child-footer-part">
+                <p class="footer-title">Departments</p>
+                <p class="first-footer-p"> <a href="/services.html">Cardio-Surgery</a></p>
+                <p class="under-footer-p"> <a href="/services.html">Emergency Medicine</a></p>
+                <p class="under-footer-p"> <a href="/services.html">Therapy/Internal Medicine</a></p>
+                <p class="under-footer-p"> <a href="/services.html">Therapy/Rehabilitation</a></p>
+            </div>
+
+            <div class="child-footer-part">
+                <p class="footer-title">Make an Appointment</p>
+                <form class="footer-form">
+                    <input  class="footer-input" type="text" placeholder="Name"> <br>
+                    <input  class="footer-input"type="email" placeholder="Email"> <br>
+                    <input class="footer-input longer" type="text"  placeholder="Message">
+                </form>
+                <button><a href="#">Send Message</a></button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="second-footer-part">
+            <p class="website-right"> All Rights Reserved by  © 2024 </p>
+            <div>
+                <img src="/images/ln.png" alt="">
+            </div>
+            <div class="img-footer-div">
+                <img src="/images/facebook.png" alt="">
+            </div>
+            <div class="img-footer-div">
+                <img src="/images/insta.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
