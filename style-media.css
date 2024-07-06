@@ -1,4 +1,12 @@
 @media (min-width: 350px){
+    body{
+        overflow-x:hidden;
+    }
+    header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width:100%;
+    }
     /* in the header part there will be only useful info regarding the hospital     */
     .first-section-of-header-part{
        display:flex;
@@ -7,6 +15,7 @@
        align-items:center;
 
        margin:0;
+       
     }
 
     /* there will not be the title of the hospital in the first section part  */
@@ -26,7 +35,7 @@
         margin-left:0px;
       
     }
-    /* there will be only 2 child div */
+    /* there will be only 2 child divs */
     .ch2{
         display:none;
     }
@@ -106,6 +115,12 @@
     }
 
     /* main part  */
+    main{
+        overflow-x: hidden;
+    }
+    .second-main-section{
+        margin-top:100px;
+    }
     /* text part */
     .text-part{
         margin-left:0px;
@@ -269,11 +284,11 @@
     }
 
     .fifth-main-section img{
-        width:350px;
+        width:100%;
     }
 
     .text-vs-form{
-        width:350px;
+        width:100%;
     }
     
     .text-vs-form h1{
@@ -315,7 +330,8 @@
 
     /* footer part */
     footer{
-        width:350px;
+        width:100%;
+        /* overflow-x: hidden; */
     }
     .firt-footer-part{
         display:flex;
@@ -343,6 +359,9 @@
 
 
 @media(min-width:650px){
+    header{
+        overflow-x: hidden;
+    }
     /* header-icons */
     .child-div-of-second-div img{
         width:50px;
@@ -381,6 +400,11 @@
     .burger-menu-div img{
         width:27px;
         height:24px;
+    }
+
+    /* main part */
+    main{
+        overflow-x: hidden;
     }
     .text-part{
         margin-left:0px;
@@ -569,6 +593,7 @@
     /* footer */
     footer{
         width:650px;
+        overflow-x: hidden;
     }
 
     .footer-title{
@@ -594,6 +619,9 @@
 }
 
 @media(min-width:750px){
+    header{
+        overflow-x: hidden;
+    }
     .burger-menu-div img{
         width:24px;
         height:20px;
@@ -607,9 +635,16 @@
     .ch3{
         margin-right:20px;
     }
+
+    footer{
+        width:100%;
+    }
 }
 
 @media(min-width:1036px){
+    header{
+        overflow-x: hidden;
+    }
     .burger-menu-div img{
         width:30px;
         height:30px;
@@ -632,10 +667,16 @@
         margin-right:20px;
     }
 
+    footer{
+        width:100%;
+        overflow-x: hidden;
+    }
+
 }
 
 @media(min-width:1250px){
     header{
+        overflow-x: hidden;
         /* writing flex in order to position 2 sections vertically */
         display:flex;
         flex-direction:column;
@@ -866,6 +907,9 @@
 
      
     /* main part  */
+    main{
+        overflow-x: hidden;
+    }
     .second-main-section{
         /* writing flex in order to position elements  horizontally */
         display:flex;

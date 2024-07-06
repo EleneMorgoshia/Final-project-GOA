@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/doctors.css">
+    <link rel="stylesheet" href="/doctors-media.css">
 </head>
 <body>
         <!--every page has the same  header part-->
-        <!--header part that has 2 sections-->
         <header>
             <!--first section of logo,name of the hospital,contact,working hours and location-->
             <section class="first-section-of-header-part">
                 <div class="first-div-of-section-one">
-                    <img class="logo" src="/images/logo.avif" alt="logo of the hospital" >
-                    <h1>PULSE<span>POINT</span></h1>
+                    <img class="logo" src="/images/logo.avif" alt="logo of the hospital">
+                    <a class="CL-NAME" href="/index.html"><h1>PULSE<span>POINT</span></h1></a>
                 </div>
     
                 <div class="second-div-of-section-one">
-                    <div class="child-div-of-second-div">
+                    <div class="child-div-of-second-div ch1">
                         <img class="contact" src="/images/contact-icon.png" alt="contact-icon" width="50"> 
                         <div class="div-of-child-div">
                             <p class="first-p-of-child-div">EMERGENCY</p> 
                             <p width="140" class="second-p-of-child-div">(237) 681-812-255</p>
                         </div>
                     </div>
-                    <div class="child-div-of-second-div">
+                    <div class="child-div-of-second-div ch2">
                         <img class="clock" src="/images/clock-icon.png" alt="clock-icon" width="50">
                         <div class="div-of-child-div">
                             <p class="first-p-of-child-div">WORK HOUR</p>
                             <p width="183" class="second-p-of-child-div">09:00 - 20:00 Everyday</p>
                         </div>
                     </div>
-                    <div class="child-div-of-second-div">
+                    <div class="child-div-of-second-div ch3">
                         <img class="location" src="/images/location-icon.png" alt="location-icon" width="50">
                         <div class="div-of-child-div">
                             <p class="first-p-of-child-div">LOCATION</p>
@@ -54,12 +54,24 @@
                     <li><a href="/login.html">Login/Patient Portal</a></li>
                 </nav>
     
+                <!--for the litte screen-->
+                <div class="clinic-name-div">
+                    <img class="hospital-logo" src="/images/logo.avif" alt="logo of the hospital">
+                    <h1>PULSE<span>POINT</span></h1>
+                </div>
+    
                 <div class="div-of-second-section">
                     <img  class="search" src="/images/search-icon.png" alt="saerch-icon" >
                     <button><a class="btn-txt" href="/appointment.html">Appointment</a></button>
                 </div>
+    
+                <!--for the little screen-->
+                <div class="burger-menu-div">
+                    <img src="/images/burger-menu.png" alt="">
+                </div>
             </section>
         </header>
+    
 
         <main>
             <!--first section of main part-->
@@ -111,7 +123,7 @@
             <section class="third-section-from-the-main-part">
                 <div class="parent-div-of-third-main-section p1">
                     <div class="image-third-section-div p1">
-                        <img  src="/images/doctor-1.jpg" alt="doctor-1" width="100" height="100">
+                        <img id="doctor-img" src="/images/doctor-1.jpg" alt="doctor-1" width="100" height="100">
                         
                         <div class="personal-info-div p1">
                             <p class="doctor-name p1">Emily Johnson</p>
@@ -147,7 +159,7 @@
 
                 <div class="parent-div-of-third-main-section p2">
                     <div class="image-third-section-div p2">
-                        <img class="p2" src="/images/doctor-2.jpg" alt="doctor-2" width="100" height="100">
+                        <img class="p2" id="doctor-img" src="/images/doctor-2.jpg" alt="doctor-2" width="100" height="100">
                         
                         <div class="personal-info-div p2">
                             <p class="doctor-name p2">Michael Smith</p>
@@ -183,7 +195,7 @@
 
                 <div class="parent-div-of-third-main-section p3">
                     <div class="image-third-section-div p3">
-                        <img  src="/images/doctor-3.jpg" alt="doctor-3" class="p3">
+                        <img id="doctor-img" src="/images/doctor-3.jpg" alt="doctor-3" class="p3">
                         
                         <div class="personal-info-div p3">
                             <p class="doctor-name p3">James Anderson</p>
@@ -219,7 +231,7 @@
 
                 <div class="parent-div-of-third-main-section p1">
                     <div class="image-third-section-div p1">
-                        <img  src="/images/doctor-4.jpg" alt="doctor-4" class="p1" >
+                        <img id="doctor-img" src="/images/doctor-4.jpg" alt="doctor-4" class="p1" >
                         
                         <div class="personal-info-div p1">
                             <p class="doctor-name p1">Daniel Brown </p>
@@ -255,7 +267,7 @@
 
                 <div class="parent-div-of-third-main-section p2">
                     <div class="image-third-section-div p2">
-                        <img  src="/images/additional-doctor.jpg" alt="doctor-5" class="p2">
+                        <img id="doctor-img" src="/images/additional-doctor.jpg" alt="doctor-5" class="p2">
                         
                         <div class="personal-info-div p2">
                             <p class="doctor-name p2">Sarah Thompson</p>
@@ -291,7 +303,7 @@
 
                 <div class="parent-div-of-third-main-section p3">
                     <div class="image-third-section-div p3">
-                        <img  src="/images/doctor-6.jpg" alt="doctor-6" class="p3">
+                        <img id="doctor-img" src="/images/doctor-6.jpg" alt="doctor-6" class="p3">
                         
                         <div class="personal-info-div p3">
                             <p class="doctor-name p3">Christopher Garcia </p>
@@ -327,7 +339,7 @@
 
                 <div class="parent-div-of-third-main-section p1">
                     <div class="image-third-section-div p1">
-                        <img  src="/images/doctor-7.jpg" alt="doctor-7" class="p1">
+                        <img id="doctor-img" src="/images/doctor-7.jpg" alt="doctor-7" class="p1">
                         
                         <div class="personal-info-div p1">
                             <p class="doctor-name p1">Olivia Martinez</p>
@@ -363,7 +375,7 @@
 
                 <div class="parent-div-of-third-main-section p2">
                     <div class="image-third-section-div p2">
-                        <img  src="/images/doctor-8.jpg" alt="doctor-8" class="p2">
+                        <img id="doctor-img" src="/images/doctor-8.jpg" alt="doctor-8" class="p2">
                         
                         <div class="personal-info-div p2">
                             <p class="doctor-name p2">Joshua Lewis </p>
@@ -399,7 +411,7 @@
 
                 <div class="parent-div-of-third-main-section p3">
                     <div class="image-third-section-div p3">
-                        <img  src="/images/doctor-9.jpg" alt="doctor-9" class="p3" >
+                        <img  id="doctor-img" src="/images/doctor-9.jpg" alt="doctor-9" class="p3" >
                         
                         <div class="personal-info-div p3">
                             <p class="doctor-name p3">Ethan Miller</p>
@@ -449,58 +461,58 @@
         </main>
 
             <!--footer-->
-    <footer>
-        <div class="firt-footer-part">
-            <div class="child-footer-part">
-                <p class="footer-title">important links</p>
-                <p class="first-footer-p"><a href="/appointment.html">Appointment</a></p>
-                <p class="under-footer-p"><a href="/doctors.css">Doctors</a></p>
-                <p class="under-footer-p"><a href="/services.html">Services</a></p>
-                <p class="under-footer-p"><a href="/aboutus.html">About Us</a></p>
-                <p class="under-footer-p"><a href="/news.html">News</a></p>
-                <p class="under-footer-p"><a href="login.html">Login/Patient Portal</a></p>
+        <footer>
+            <div class="firt-footer-part">
+                <div class="child-footer-part">
+                    <p class="footer-title">Important links</p>
+                    <p class="first-footer-p"><a href="/appointment.html">Appointment</a></p>
+                    <p class="under-footer-p"><a href="/doctors.css">Doctors</a></p>
+                    <p class="under-footer-p"><a href="/services.html">Services</a></p>
+                    <p class="under-footer-p"><a href="/aboutus.html">About Us</a></p>
+                    <p class="under-footer-p"><a href="/news.html">News</a></p>
+                    <p class="under-footer-p"><a href="login.html">Login/Patient Portal</a></p>
+                </div>
+
+                <div class="child-footer-part">
+                    <p class="footer-title">Contact Us</p>
+                    <p class="first-footer-p">Emergency:(237) 681-812-255</p>
+                    <p class="under-footer-p">Email Address:PulsePoint@gmail.com</p>
+                    <p class="under-footer-p">Location:107-70 Stockholm, Sweden</p>
+                </div>
+
+                <div class="child-footer-part">
+                    <p class="footer-title">Departments</p>
+                    <p class="first-footer-p"> <a href="/services.html">Cardio-Surgery</a></p>
+                    <p class="under-footer-p"> <a href="/services.html">Emergency Medicine</a></p>
+                    <p class="under-footer-p"> <a href="/services.html">Therapy/Internal Medicine</a></p>
+                    <p class="under-footer-p"> <a href="/services.html">Therapy/Rehabilitation</a></p>
+                </div>
+
+                <div class="child-footer-part">
+                    <p class="footer-title">Make an Appointment</p>
+                    <form class="footer-form">
+                        <input  class="footer-input" type="text" placeholder="Name"> <br>
+                        <input  class="footer-input"type="email" placeholder="Email"> <br>
+                        <input class="footer-input longer" type="text"  placeholder="Message">
+                    </form>
+                    <button><a href="#">Send Message</a></button>
+                </div>
             </div>
 
-            <div class="child-footer-part">
-                <p class="footer-title">Contact Us</p>
-                <p class="first-footer-p">Emergency:(237) 681-812-255</p>
-                <p class="under-footer-p">Email Address:PulsePoint@gmail.com</p>
-                <p class="under-footer-p">Location:107-70 Stockholm, Sweden</p>
-            </div>
+            <hr>
 
-            <div class="child-footer-part">
-                <p class="footer-title">departments</p>
-                <p class="first-footer-p"> <a href="/services.html">Cardio-Surgery</a></p>
-                <p class="under-footer-p"> <a href="/services.html">Emergency Medicine</a></p>
-                <p class="under-footer-p"> <a href="/services.html">Therapy/Internal Medicine</a></p>
-                <p class="under-footer-p"> <a href="/services.html">Therapy/Rehabilitation</a></p>
+            <div class="second-footer-part">
+                <p class="website-right"> All Rights Reserved by  © 2024 </p>
+                <div>
+                    <img src="/images/ln.png" alt="">
+                </div>
+                <div class="img-footer-div">
+                    <img src="/images/facebook.png" alt="">
+                </div>
+                <div class="img-footer-div">
+                    <img src="/images/insta.png" alt="">
+                </div>
             </div>
-
-            <div class="child-footer-part">
-                <p class="footer-title">Make an Appointment</p>
-                <form class="footer-form">
-                    <input  class="footer-input" type="text" placeholder="Name"> <br>
-                    <input  class="footer-input"type="email" placeholder="Email"> <br>
-                    <input class="footer-input longer" type="text"  placeholder="Message">
-                </form>
-                <button><a href="#">Send Message</a></button>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="second-footer-part">
-            <p class="website-right"> All Rights Reserved by  © 2024 </p>
-            <div>
-                <img src="/images/ln.png" alt="">
-            </div>
-            <div class="img-footer-div">
-                <img src="/images/facebook.png" alt="">
-            </div>
-            <div class="img-footer-div">
-                <img src="/images/insta.png" alt="">
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 </html>

@@ -1,0 +1,880 @@
+@media(min-width:350px){
+    body {
+        overflow-x: hidden;
+    }
+    /* header part will be same for each page */
+    /* in the header part there will be only useful info regarding the hospital     */
+    .first-section-of-header-part{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+ 
+        margin:0;
+     }
+ 
+     /* there will not be the title of the hospital in the first section part  */
+     .first-div-of-section-one{
+         display:none;
+     }
+     /* second section - 3 divs that involves useful info */
+     .second-div-of-section-one{
+         display:flex;
+         margin-left:0px;
+     }
+ 
+     .child-div-of-second-div{ 
+         display:flex;
+         align-items:center;
+     
+         margin-left:0px;
+       
+     }
+     /* there will be only 2 child div */
+     .ch2{
+         display:none;
+     }
+ 
+     .ch3{
+         margin-left:25px;
+     }
+ 
+     .ch1{
+         margin-left:10px;
+     }
+ 
+     /* icon  */
+     .child-div-of-second-div img{
+         width:30px;
+         height:30px;
+     }
+ 
+     /* p */
+     .first-p-of-child-div{
+         font-size:14px;
+     }
+ 
+     .second-p-of-child-div{
+         font-size:14px;
+        
+     }
+ 
+     /* second section from the header part - name of the company and the burger manu icon */
+     .second-section-of-header-part{
+         height:60px;
+     }
+     
+     nav{
+         display:none;
+     }
+ 
+     /* h1 will be appeared */
+     .clinic-name-div{
+         display:block;
+         display:flex;
+         align-items:center;
+         margin-right:20px;
+     }
+ 
+     .hospital-logo{
+         width:35px;
+     }
+ 
+     .clinic-name-div h1{
+         color:#fff;
+         font-family:Yeseva One;
+         font-size:24px;
+     }
+ 
+     .clinic-name-div span{
+         color:#B1040E;
+         font-family:Yeseva One;
+     }
+ 
+     .search{
+         display:none;
+     }
+     
+     .div-of-second-section button{
+         display:none;
+     }
+  
+     /* menu */
+     .burger-menu-div{
+         display:block;
+     }
+ 
+     .burger-menu-div img{
+         width:24px;
+         height:20px;
+     }
+    
+    /* main part */
+    /* second main section - opening text */
+    .second-main-section{
+        margin-top:-150px;
+    }
+
+    /* third section -about us info */
+    .third-main-section{
+        display:flex;
+        flex-direction:column;
+
+        margin-top:300px;
+    }
+    
+    .text-part{
+        margin-left:0px;
+        margin-top:10px;
+        margin-left:25px;
+
+    }
+    /* first-h1 */
+    .welcome-to{
+        font-size:24px;
+        margin-left:50x;
+    }
+
+    /* second h1 */
+    .pulse-point{
+        margin-top:0px;
+    }
+    .first-p-from-text-part{
+        width:300px;
+    
+    }
+    .second-p-from-text-part{
+       width:300px; 
+    }
+    .service-links{
+        font-size:15px;
+    }
+/* 
+    appointment  and services buttons */
+    .img-vs-text img{
+        width:12px;
+    }
+    .img-vs-text p{
+        font-size:15px;
+    }
+    .div2{
+        margin-left:15px;
+    }
+    .text{
+        margin-left:7px;
+    }
+    .img-part{
+        margin-left:20px;
+    }
+    .img-part img{
+        width:300px;
+        margin-top:40px;
+    }
+
+    /* styling the forth section - doctors */
+    .forth-main-section{
+        margin-top:350px;
+    }
+
+    .forth-main-section h1{
+        font-size:30px;
+        text-align: center;
+    }
+
+    .parent-doctors-div{
+        grid-template-columns: repeat(1,300px);
+        gap:25px
+    }
+
+    /* styling the fifth section - hearing from patients */
+    .fifth-main-section h1{
+        text-align:center;
+    }
+
+    .parent-patients-div{
+        grid-template-columns:repeat(1,300px);
+        margin-left:40px;
+    }
+
+    /* footer */
+
+    /* footer part */
+    footer{
+        width:350px;
+    }
+    .firt-footer-part{
+        display:flex;
+        flex-direction:column;
+        gap:0;
+        height:max-content;
+
+    }
+   
+    hr{
+        margin-top:10px;
+    }
+    .second-footer-part{
+        display:flex;
+      
+    }
+
+    .website-right{
+        margin-right:50px;
+        font-size:12px;
+
+    }
+}
+
+@media(min-width:650px){
+     /* header-icons */
+     .child-div-of-second-div img{
+        width:50px;
+        height:50px;
+    }
+
+    .first-p-of-child-div{
+        font-size:17px;
+    }
+
+    .second-p-of-child-div{
+        font-size:16px;
+       
+    }
+
+    .ch3{
+        margin-left:100px;
+    }
+
+    .hospital-logo{
+        width:40px;
+    }
+
+    .clinic-name-div h1{
+        color:#fff;
+        font-family:Yeseva One;
+        font-size:28px;
+    }
+
+     /* menu */
+     .burger-menu-div{
+        display:block;
+        margin-left:200px;
+    }
+
+    .burger-menu-div img{
+        width:27px;
+        height:24px;
+    }
+
+     /* main part */
+    /* second main section - opening text */
+
+    .second-main-section{
+        margin-top:0px;
+    }
+/* 
+    styling thrid main section */
+    .third-main-section{
+        flex-direction:column;
+    }
+    .text-part{
+        margin-left:0px;
+        margin-top:0px;
+        /* margin-left:25px; */
+        margin-right:20px;
+    }
+    /* first-h1 */
+    .welcome-to{
+        font-size:40px;
+       
+    }
+
+    /* second h1 */
+    .pulse-point{
+        margin-top:0px;
+        font-size:50px;
+    }
+    .first-p-from-text-part{
+        width:540px;
+        font-size:20px;
+      
+    }
+    .second-p-from-text-part{
+       width:540px; 
+       font-size:20px;
+       
+    }
+    .service-links{
+        font-size:17px;
+    }
+
+    .img-part img{
+        width:540px;
+        margin-top:40px;
+        margin-right:40px;
+    }
+
+    /* styling the forth section - doctors */
+    .forth-main-section{
+        margin-top:350px;
+    }
+
+    .forth-main-section h1{
+        font-size:40px;
+        text-align: center;
+    }
+
+    .parent-doctors-div{
+        grid-template-columns: repeat(1,350px);
+        gap:35px
+    }
+
+    /* styling the fifth section - hearing from patients */
+    .fifth-main-section h1{
+        text-align:center;
+        font-size:40px;
+    }
+
+    .parent-patients-div{
+        grid-template-columns:repeat(1,300px);
+        margin-left:40px;
+    }
+
+    /* footer part */
+    footer{
+        width:650px;
+    }
+
+    .footer-title{
+        font-size:35px;
+        color:#fff;
+        margin-top:30px;
+    }
+    .first-footer-p{
+        margin-top:30px;
+        font-size:25px;
+        color:#fff;
+    }
+    
+    .under-footer-p{
+        margin-top:10px;
+        color:#fff;
+        font-size:22px;
+    }
+    
+    .website-right{
+        font-size:20px;
+    }
+}
+
+@media(min-width:750px){
+    .burger-menu-div img{
+        width:24px;
+        height:20px;
+        margin-left:150px;
+    }
+
+    .ch1{
+        margin-right:100px;
+    }
+
+    .ch3{
+        margin-right:20px;
+    }
+
+    footer{
+        width:100%;
+    }
+}
+
+@media(min-width:1036px){
+    .burger-menu-div img{
+        width:30px;
+        height:30px;
+        margin-left:400px;
+    }
+
+    .ch1{
+        margin-right:300px;
+    }
+
+    .ch2{
+        display:block;
+        display:flex;
+    }
+    .ch2 img{
+        width:50px;
+        height:50px;
+    }
+    .ch3{
+        margin-right:20px;
+    }
+
+    footer{
+        width:100%;
+    }
+}
+
+
+@media(min-width:1250px){
+    header{
+        /* writing flex in order to position 2 sections vertically */
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    
+    
+        margin-top:20px;
+        padding:0px;
+      
+        margin-bottom: -1px;/*there will not be the space betwee the header and the main art */
+      
+    }
+    
+    /* first section - logo, name of the hospital, additional info */
+    .first-section-of-header-part{
+        /* writing flex in order to position elements horizontally */
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+
+    }
+ 
+    .first-div-of-section-one{
+        display:block;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .logo{
+        width:36.44px;
+        height:41.97px;
+    
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+    }
+
+    
+    /* name of the hospital */
+    .first-div-of-section-one h1{
+        font-family:Yeseva One;
+        font-size:31px;
+        color:#1F2B6C;
+
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+
+    }
+    .first-div-of-section-one h1 span{
+        color:#B1040E;
+    }
+     
+    /* second section - 3 divs that involves useful info */
+    .second-div-of-section-one{
+        /* writing flex in order to position elements horizontally */
+        display:flex;
+    
+        margin-left:250px;
+    
+     
+    }
+    .child-div-of-second-div{ 
+        display:flex;
+        align-items:center;
+    
+        margin-left:80px;
+      
+    }
+     /* there will be only 2 child div */
+    .ch1{
+        margin-right:0px;
+        
+    }
+
+    .ch1 img{
+        width:40px;
+        height:38px;
+    }
+    .ch2{
+        display:block;
+        display:flex;
+    }
+    .ch2 img{
+        width:32px;
+        height:33px;
+    }
+    
+    .ch3{
+        margin-right:5px;
+    }
+
+    .ch3 img{
+        width:40px;
+        height:39px;
+    }
+
+    /* first p */
+    .first-p-of-child-div{
+        color:black;
+        font-weight:bold;
+        font-size:16px;
+        animation-name:appearing-left;
+        animation-duration:2s;
+    }
+ 
+    /* second p */
+    .second-p-of-child-div{
+        color:#B1040E;
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+    }
+ 
+     /* second section from the header part - name of the company and the burger manu icon */
+    .second-section-of-header-part{
+    /* writing flex in order to position elements horizotally */
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    
+        background-color:#1F2B6C;
+        width:100%;
+        margin-top:20px;
+        height:80px;
+    }
+     
+    nav{
+        display:block;
+        display:flex;
+        list-style-type: none;
+     
+         
+        padding:10px 0;
+    }
+
+    nav li{
+        font-size:20px;
+    
+        margin:10px;
+        padding:10px;
+    
+        animation-name:top-appearing;
+        animation-duration:2s;
+    }
+ 
+
+    nav li a{
+        color:#000;
+        text-decoration: none;
+        transition:color 0.1s;
+        color:#fff;
+    
+        
+    }
+    
+    nav li a:hover{
+        color:#B1040E;
+        cursor:pointer;
+        color:#000;
+    }
+    
+    .clinic-name-div{
+        display:none;
+    }
+ 
+ 
+    /* styling the second div from the second section */
+    .div-of-second-section{
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        align-items:center;
+
+        margin-top:5px;
+        margin-left:65px;
+   
+    }
+
+    .search{
+        display:block;
+        width:25px;
+        height:25px;
+    
+        animation-name:appearing-left;
+        animation-duration:2s;  
+    }
+     
+    .div-of-second-section button{
+        display:block;
+
+    }
+  
+     /* menu */
+    .burger-menu-div{
+        display:block;
+        width:173px;
+        height:45px;
+        border-radius:50px;
+     
+        margin-left:20px;
+     
+        animation-name:top-appearing;
+        animation-duration:2s;
+    }
+    .btn-txt{
+        font-size:18px;
+        color:#000;
+        text-decoration: none;
+        font-family: Yeseva One;
+    
+        transition:0.1s;
+    
+    }
+    
+    
+    .btn-txt:hover{
+        cursor:pointer;
+    }
+    
+    .div-of-second-section button:hover{
+        background-color:#ffffffcc
+    }
+    
+    .burger-menu-div{
+        display:none;
+    }
+
+
+    /* main part */
+    .second-main-section{
+        margin-top:80px;
+        
+    }
+    .third-main-section{
+        /* writing flex in order to position elements  horizontally */
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    
+        margin-top:120px;
+    
+        height:626px;
+    
+        background-color:rgb(250, 250, 250);
+    }
+   /* text part */
+   .text-part{
+        /* writing flex in order to position elements vertically */
+        display:flex;
+        flex-direction:column;
+
+        margin-left:60px;
+        margin-top:20px;
+
+    }
+    /* first-h1 */
+    .welcome-to{
+        font-size:40px;
+        margin-left:0px;
+    }
+
+    /* second h1 */
+    .pulse-point{
+        font-family:Yeseva One;
+        font-size:38px;
+        color:#1F2B6C;
+
+        margin-top:15px;
+    }
+    .pulse-point span{
+        color:#B1040E;
+    }
+
+    .first-p-from-text-part{
+        width:558px;
+        font-family:Quicksand;
+        font-weight: bold;
+        font-size:17.5px;
+
+        margin-top:20px;
+    }
+
+    .second-p-from-text-part{
+        width:558px;
+        font-family:Quicksand;
+        font-weight: bold;
+        font-size:18px;
+
+        margin-top:20px;
+    }
+    .service-links{
+        text-decoration: none;
+        color:#B1040E;
+        transition: 0.1s;
+        font-family:Yeseva One ;
+    }
+
+    .service-links:hover{
+        color:#1F2B6C;
+        cursor:pointer;
+    }
+
+
+    /* styling the parent div that has 2 children */
+    .parent-img-vs-text-div{
+        /* writing flex in order to position elements horizontally */
+        display:flex;
+
+        margin-top:20px;
+    }
+
+    /* appointment  and services buttons */
+    .img-vs-text img{
+        display:flex;
+        align-items:center;
+    }
+    .div2{
+        margin-left:20px;
+    }
+    .text{
+        margin-left:10px;
+        text-decoration:none;
+        color:#1F2B6C;
+        transition:0.1s;
+    }
+
+    .text:hover{
+        cursor:pointer;
+        color:#B1040E;
+    }
+
+
+    .img-part{
+       
+        margin-left:100px;
+    }
+
+    .img-part img{
+        width:540px;
+        height:500px;
+        border-radius:6px;
+    }
+
+    /* styling the forth section - doctors */
+    .forth-main-section{
+        margin-top:350px;
+    }
+
+    .forth-main-section h1{
+        font-size:40px;
+        text-align: center;
+    }
+
+    .parent-doctors-div{
+        grid-template-columns: repeat(1,350px);
+        gap:35px
+    }
+
+    /* styling the fifth section - hearing from patients */
+    .forth-main-section{
+        /* writing flex in order to position elements vertically */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    
+        margin-top:120px;
+    }
+    
+    /* h1 */
+    .forth-main-section h1{
+        font-size:35px;
+        color:#1F2B6C;
+    }
+    
+    /* styling the parent div */
+    .parent-doctors-div{
+        /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns: repeat(4,350px);
+    
+        margin-top:50px;
+        gap:5px;
+    }
+
+    /* stylign the fifth section - hearing from out patients */
+    .fifth-main-section{
+        /* writing flex in order to position elements vertically */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .fifth-main-section h1{
+        font-size:30px;
+        color:#1F2B6C;
+
+        margin-top:100px;
+    }
+
+    /* styling  a parent div */
+    .parent-patients-div{
+        /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns:repeat(3,300px);
+
+        gap:20px;
+
+    }
+
+     /* footer part */
+     footer{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    
+        margin-top:100px;
+        background-color: #1F2B6C;
+        width:100%;
+    }
+    .firt-footer-part{
+        display:flex;
+        flex-direction: row;
+
+        gap:80px;
+        height:320px;
+        margin-top:20px;
+
+    }
+    .footer-title{
+        font-size:22px;
+        color:#fff;
+        margin-top:30px;
+    }
+    .first-footer-p{
+        margin-top:30px;
+        font-size:17px;
+        color:#fff;
+    }
+    .under-footer-p{
+        font-size:17px;
+    }
+    .second-footer-part{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    
+        margin-top:0px;
+      
+    }
+
+    .website-right{
+        margin-right:950px;
+        color:#fff;
+        font-size:17px;
+    }
+}

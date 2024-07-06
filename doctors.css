@@ -77,6 +77,9 @@ header{
     animation-duration:2s;
 
 }
+.CL-NAME{
+    text-decoration: none;
+}
 .first-div-of-section-one h1 span{
     color:#B1040E;
 
@@ -518,7 +521,7 @@ nav li a:hover{
     animation-duration:2s;
 }
 
-.searching-button:hover{
+.searching-button:hover{ 
     background-color: #fff;
     cursor: pointer;
 }

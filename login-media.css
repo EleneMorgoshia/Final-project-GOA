@@ -1,0 +1,619 @@
+@media(min-width:350px){
+    body{
+        overflow-x:hidden;
+    }
+    header{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width:100%;
+    }
+    /* in the header part there will be only useful info regarding the hospital     */
+    .first-section-of-header-part{
+       display:flex;
+       flex-direction:row;
+       justify-content: center;
+       align-items:center;
+
+       margin:0;
+       
+    }
+
+    /* there will not be the title of the hospital in the first section part  */
+    .first-div-of-section-one{
+        display:none;
+    }
+    /* second section - 3 divs that involves useful info */
+    .second-div-of-section-one{
+        display:flex;
+        margin-left:0px;
+    }
+
+    .child-div-of-second-div{ 
+        display:flex;
+        align-items:center;
+    
+        margin-left:0px;
+      
+    }
+    /* there will be only 2 child div */
+    .ch2{
+        display:none;
+    }
+
+    .ch3{
+        margin-left:25px;
+    }
+
+    .ch1{
+        margin-left:10px;
+    }
+
+    /* icon  */
+    .child-div-of-second-div img{
+        width:30px;
+        height:30px;
+    }
+
+    /* p */
+    .first-p-of-child-div{
+        font-size:14px;
+    }
+
+    .second-p-of-child-div{
+        font-size:14px;
+       
+    }
+
+    /* second section from the header part - name of the company and the burger manu icon */
+    .second-section-of-header-part{
+        height:60px;
+    }
+    
+    nav{
+        display:none;
+    }
+
+    /* h1 will be appeared */
+    .clinic-name-div{
+        display:block;
+        display:flex;
+        align-items:center;
+        margin-right:20px;
+    }
+
+    .hospital-logo{
+        width:35px;
+    }
+
+    .clinic-name-div h1{
+        color:#fff;
+        font-family:Yeseva One;
+        font-size:24px;
+    }
+
+    .clinic-name-div span{
+        color:#B1040E;
+        font-family:Yeseva One;
+    }
+
+    .search{
+        display:none;
+    }
+    
+    .div-of-second-section button{
+        display:none;
+    }
+ 
+    /* menu */
+    .burger-menu-div{
+        display:block;
+    }
+
+    .burger-menu-div img{
+        width:24px;
+        height:20px;
+    }
+
+    /* main part */
+    main{
+        overflow-x: hidden;
+    }
+
+    .first-main-section{
+        margin-left:80px;
+    }
+ 
+    .input{
+        width:300px;
+        margin-left:0px;
+        margin-right:100px;
+    }
+
+    .sign-in{
+        width:300px;
+        margin-right:90px;
+    }
+
+    .Google-vs-text button{
+        width:300px;
+        margin-right:90px;
+    }
+    /* footer - part */
+      /* footer part */
+      footer{
+        width:100%;
+        /* overflow-x: hidden; */
+    }
+    .firt-footer-part{
+        display:flex;
+        flex-direction:column;
+        gap:0;
+        height:max-content;
+
+    }
+   
+    hr{
+        margin-top:10px;
+    }
+    .second-footer-part{
+        display:flex;
+      
+    }
+
+    .website-right{
+        margin-right:50px;
+        font-size:12px;
+
+    }
+}
+
+@media(min-width:650px){
+    header{
+        overflow-x: hidden;
+    }
+    /* header-icons */
+    .child-div-of-second-div img{
+        width:50px;
+        height:50px;
+    }
+
+    .first-p-of-child-div{
+        font-size:17px;
+    }
+
+    .second-p-of-child-div{
+        font-size:16px;
+       
+    }
+
+    .ch3{
+        margin-left:100px;
+    }
+
+    .hospital-logo{
+        width:40px;
+    }
+
+    .clinic-name-div h1{
+        color:#fff;
+        font-family:Yeseva One;
+        font-size:28px;
+    }
+
+     /* menu */
+     .burger-menu-div{
+        display:block;
+        margin-left:200px;
+    }
+
+    .burger-menu-div img{
+        width:27px;
+        height:24px;
+    }
+}
+
+@media(min-width:750px){
+    header{
+        overflow-x: hidden;
+    }
+    .burger-menu-div img{
+        width:24px;
+        height:20px;
+        margin-left:150px;
+    }
+
+    .ch1{
+        margin-right:100px;
+    }
+
+    .ch3{
+        margin-right:20px;
+    }
+    footer{
+        width:100%;
+    }
+}
+
+@media(min-width:1036px){
+    header{
+        overflow-x: hidden;
+    }
+    .burger-menu-div img{
+        width:30px;
+        height:30px;
+        margin-left:400px;
+    }
+
+    .ch1{
+        margin-right:300px;
+    }
+
+    .ch2{
+        display:block;
+        display:flex;
+    }
+    .ch2 img{
+        width:50px;
+        height:50px;
+    }
+    .ch3{
+        margin-right:20px;
+    }
+
+    
+    .first-main-section{
+        margin-left:550px;
+    }
+
+    footer{
+        width:100%;
+        overflow-x: hidden;
+    }
+
+}
+
+@media(min-width:1250px){
+    header{
+        overflow-x: hidden;
+        /* writing flex in order to position 2 sections vertically */
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    
+    
+        margin-top:20px;
+        padding:0px;
+      
+        margin-bottom: -1px;/*there will not be the space betwee the header and the main art */
+      
+    }
+    
+    /* first section - logo, name of the hospital, additional info */
+    .first-section-of-header-part{
+        /* writing flex in order to position elements horizontally */
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+
+    }
+ 
+    .first-div-of-section-one{
+        display:block;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .logo{
+        width:36.44px;
+        height:41.97px;
+    
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+    }
+
+    
+    /* name of the hospital */
+    .first-div-of-section-one h1{
+        font-family:Yeseva One;
+        font-size:31px;
+        color:#1F2B6C;
+
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+
+    }
+    .first-div-of-section-one h1 span{
+        color:#B1040E;
+    }
+     
+    /* second section - 3 divs that involves useful info */
+    .second-div-of-section-one{
+        /* writing flex in order to position elements horizontally */
+        display:flex;
+    
+        margin-left:250px;
+    
+     
+    }
+    .child-div-of-second-div{ 
+        display:flex;
+        align-items:center;
+    
+        margin-left:80px;
+      
+    }
+     /* there will be only 2 child div */
+    .ch1{
+        margin-right:0px;
+        
+    }
+
+    .ch1 img{
+        width:40px;
+        height:38px;
+    }
+    .ch2{
+        display:block;
+        display:flex;
+    }
+    .ch2 img{
+        width:32px;
+        height:33px;
+    }
+    
+    .ch3{
+        margin-right:5px;
+    }
+
+    .ch3 img{
+        width:40px;
+        height:39px;
+    }
+
+    /* first p */
+    .first-p-of-child-div{
+        color:black;
+        font-weight:bold;
+        font-size:16px;
+        animation-name:appearing-left;
+        animation-duration:2s;
+    }
+ 
+    /* second p */
+    .second-p-of-child-div{
+        color:#B1040E;
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+    }
+ 
+     /* second section from the header part - name of the company and the burger manu icon */
+    .second-section-of-header-part{
+    /* writing flex in order to position elements horizotally */
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    
+        background-color:#1F2B6C;
+        width:100%;
+        margin-top:20px;
+        height:80px;
+    }
+     
+    nav{
+        display:block;
+        display:flex;
+        list-style-type: none;
+     
+         
+        padding:10px 0;
+    }
+
+    nav li{
+        font-size:20px;
+    
+        margin:10px;
+        padding:10px;
+    
+        animation-name:top-appearing;
+        animation-duration:2s;
+    }
+ 
+
+    nav li a{
+        color:#000;
+        text-decoration: none;
+        transition:color 0.1s;
+        color:#fff;
+    
+        
+    }
+    
+    nav li a:hover{
+        color:#B1040E;
+        cursor:pointer;
+        color:#000;
+    }
+    
+    .clinic-name-div{
+        display:none;
+    }
+ 
+ 
+    /* styling the second div from the second section */
+    .div-of-second-section{
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        align-items:center;
+
+        margin-top:5px;
+        margin-left:65px;
+   
+    }
+
+    .search{
+        display:block;
+        width:25px;
+        height:25px;
+    
+        animation-name:appearing-left;
+        animation-duration:2s;  
+    }
+     
+    .div-of-second-section button{
+        display:block;
+
+    }
+  
+     /* menu */
+    .burger-menu-div{
+        display:block;
+        width:173px;
+        height:45px;
+        border-radius:50px;
+     
+        margin-left:20px;
+     
+        animation-name:top-appearing;
+        animation-duration:2s;
+    }
+    .btn-txt{
+        font-size:18px;
+        color:#000;
+        text-decoration: none;
+        font-family: Yeseva One;
+    
+        transition:0.1s;
+    
+    }
+    
+    
+    .btn-txt:hover{
+        cursor:pointer;
+    }
+    
+    .div-of-second-section button:hover{
+        background-color:#ffffffcc
+    }
+    
+    .burger-menu-div{
+        display:none;
+    }
+ 
+    /* main part */
+    main{
+        overflow-x: hidden;
+        height:700px;
+    }
+
+    .first-main-section{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top:30px;
+        margin-left:650px;
+    }
+
+    .login{
+        margin-top:20px;
+        margin-right:250px;
+        font-size:55px;
+        color:#1F2B6C;
+    
+    
+        animation-name:appearing-rigth;
+        animation-duration:2s;
+        margin-left:-100px;
+    }
+ 
+    .input{
+        width:400px;
+        height:60px;
+        border-radius:5px;
+        padding-left:10px;
+    }
+
+    .frg-p{
+        margin-right:350px;
+        margin-top:10px;
+    
+        animation-name:appearing-left;
+        animation-duration:2s;
+    }
+    .sign-in{
+        margin-top:20px;
+        /* margin-right:60px; */
+        border-radius:10px;
+        width:400px;
+        height:60px;
+        background-color: #1F2B6C;
+        transition: 0.5s;
+    
+        animation-name:appearing-bottom;
+        animation-duration:2s;
+    }
+
+    .Google-vs-text button{
+        border-radius:10px;
+        width:400px;
+        height:60px;
+        margin-top:5px;
+        background-color:#fff;
+    
+        animation-name:appearing-bottom;
+        animation-duration:2s;
+    }
+
+    
+     /* footer part */
+     footer{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    
+        /* margin-top:100px; */
+        background-color: #1F2B6C;
+        width:100%;
+    }
+    .firt-footer-part{
+        display:flex;
+        flex-direction: row;
+
+        gap:80px;
+        height:320px;
+        margin-top:20px;
+
+    }
+    .footer-title{
+        font-size:22px;
+        color:#fff;
+        margin-top:30px;
+    }
+    .first-footer-p{
+        margin-top:30px;
+        font-size:17px;
+        color:#fff;
+    }
+    .under-footer-p{
+        font-size:17px;
+    }
+    .second-footer-part{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    
+        margin-top:0px;
+      
+    }
+
+    .website-right{
+        margin-right:950px;
+        color:#fff;
+        font-size:17px;
+    }
+}

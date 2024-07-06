@@ -77,6 +77,9 @@ header{
     animation-duration:2s;
 
 }
+.CL-NAME{
+    text-decoration: none;
+}
 .first-div-of-section-one h1 span{
     color:#B1040E;
 
@@ -494,6 +497,9 @@ nav li a:hover{
     padding-left:20px;
 }
 
+.online-booking{
+    display:none;
+}
 /* ***********styling the footer part************ */
 footer{
     /* writing flex in order to position elements vertically */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/aboutus.css">
+    <link rel="stylesheet" href="/aboutus-media.css">
 </head>
 <body>
     <!--header part will be same for evry page-->
@@ -12,26 +13,26 @@
         <!--first section of logo,name of the hospital,contact,working hours and location-->
         <section class="first-section-of-header-part">
             <div class="first-div-of-section-one">
-                <img class="logo" src="/images/logo.avif" alt="logo of the hospital" >
-                <h1>PULSE<span>POINT</span></h1>
+                <img class="logo" src="/images/logo.avif" alt="logo of the hospital">
+                <a class="CL-NAME" href="/index.html"><h1>PULSE<span>POINT</span></h1></a>
             </div>
 
             <div class="second-div-of-section-one">
-                <div class="child-div-of-second-div">
+                <div class="child-div-of-second-div ch1">
                     <img class="contact" src="/images/contact-icon.png" alt="contact-icon" width="50"> 
                     <div class="div-of-child-div">
                         <p class="first-p-of-child-div">EMERGENCY</p> 
                         <p width="140" class="second-p-of-child-div">(237) 681-812-255</p>
                     </div>
                 </div>
-                <div class="child-div-of-second-div">
+                <div class="child-div-of-second-div ch2">
                     <img class="clock" src="/images/clock-icon.png" alt="clock-icon" width="50">
                     <div class="div-of-child-div">
                         <p class="first-p-of-child-div">WORK HOUR</p>
                         <p width="183" class="second-p-of-child-div">09:00 - 20:00 Everyday</p>
                     </div>
                 </div>
-                <div class="child-div-of-second-div">
+                <div class="child-div-of-second-div ch3">
                     <img class="location" src="/images/location-icon.png" alt="location-icon" width="50">
                     <div class="div-of-child-div">
                         <p class="first-p-of-child-div">LOCATION</p>
@@ -50,12 +51,23 @@
                 <li><a href="/doctors.html">Doctors</a></li>
                 <li><a href="/news.html">News</a></li>
                 <li><a href="/contactus.html">Contact us</a></li>
-                <li><a href="login.html">Login/Patient Portal</a></li>
+                <li><a href="/login.html">Login/Patient Portal</a></li>
             </nav>
+
+            <!--for the litte screen-->
+            <div class="clinic-name-div">
+                <img class="hospital-logo" src="/images/logo.avif" alt="logo of the hospital">
+                <h1>PULSE<span>POINT</span></h1>
+            </div>
 
             <div class="div-of-second-section">
                 <img  class="search" src="/images/search-icon.png" alt="saerch-icon" >
                 <button><a class="btn-txt" href="/appointment.html">Appointment</a></button>
+            </div>
+
+            <!--for the little screen-->
+            <div class="burger-menu-div">
+                <img src="/images/burger-menu.png" alt="">
             </div>
         </section>
     </header>
@@ -247,7 +259,7 @@
         <footer>
             <div class="firt-footer-part">
                 <div class="child-footer-part">
-                    <p class="footer-title">important links</p>
+                    <p class="footer-title">Important links</p>
                     <p class="first-footer-p"><a href="/appointment.html">Appointment</a></p>
                     <p class="under-footer-p"><a href="/doctors.css">Doctors</a></p>
                     <p class="under-footer-p"><a href="/services.html">Services</a></p>
@@ -264,7 +276,7 @@
                 </div>
     
                 <div class="child-footer-part">
-                    <p class="footer-title">departments</p>
+                    <p class="footer-title">Departments</p>
                     <p class="first-footer-p"> <a href="/services.html">Cardio-Surgery</a></p>
                     <p class="under-footer-p"> <a href="/services.html">Emergency Medicine</a></p>
                     <p class="under-footer-p"> <a href="/services.html">Therapy/Internal Medicine</a></p>
